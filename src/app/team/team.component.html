@@ -1,0 +1,36 @@
+<!-- <dt-navbar></dt-navbar> -->
+<div>&nbsp;
+    <div style="text-align: center;">
+        <h1 style="color: white;">{{pageTitle}}</h1>
+    </div>
+</div>
+
+                <table  class='table' *ngIf='employees && employees.length'>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Member</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Experience</th>
+                            <th>Status</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let employee of employees'>
+                            <td>
+                                <img  style="border-radius: 80px;"
+                                [src]="employee.imageUrl" [title]="employee.employeeName" [style.width.px]='imageWidth' [style.margin,px]='imageMargin' >
+                            </td>
+                            <td style="color: khaki;">{{employee.employeeName}}</td>
+                            <td style="color: indigo;">{{employee.department}}</td>
+                            <td style="color: black;">{{employee.position}}</td>
+                            <td style="color: greenyellow;">{{employee.experience}} Year(s)</td>
+                            <td style="color: greenyellow;">●{{employee.Status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+         
+<dt-footer></dt-footer>

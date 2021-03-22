@@ -1,0 +1,40 @@
+.box{
+    width: 80%;
+    margin: auto;
+    background: rgba(88, 85, 85, 0.459);
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,3);
+    color: white;
+}
+
+.box .heading{
+    background: rgba(27, 27, 27, 0.507);
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.faqs{
+    padding: 10px 20px;
+}
+
+::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+   
+}
+
+details{
+    background: rgba(92, 79, 78, 0.473);
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+detail summary{
+    outline: none;
+}
